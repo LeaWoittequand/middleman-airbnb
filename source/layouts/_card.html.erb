@@ -3,21 +3,22 @@
   <div class="row">
     <% data.flats.each do |flat| %>
     <div class="col-md-4">
-      <div class="card" style="background-image: url(<%= image_path flat.picture %>);">
+      <div class="card" style="background-image: linear-gradient(-150deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%), url(<%= image_path flat.picture %>);">
         <h2><%= flat.city %></h2>
         <h3><%= flat.titre %></h3>
         <p><%= flat.description %></p>
         <%= image_tag flat.avatar, class: "card-user" %>
         <ul>
-          <li><i class="fa fa-star" style="color: #ffb400" aria-hidden="true"></i></li>
-          <li><i class="fa fa-star" style="color: #ffb400" aria-hidden="true"></i></li>
-          <li><i class="fa fa-star" style="color: #ffb400" aria-hidden="true"></i></li>
-          <li><i class="fa fa-star" style="color: #ffb400" aria-hidden="true"></i></li>
-          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star full-star" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star full-star" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star full-star" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star full-star" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star grey-star color="grey" aria-hidden="true"></i></li>
         </ul>
       </div>
     </div>
     <% end %>
   </div>
 </div>
+
 
