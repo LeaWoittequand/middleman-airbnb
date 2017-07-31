@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="text-center"> Recent flats </h1>
+  <div class="row">
+    <% data.flats.each do |flat| %>
+    <div class="col-md-4">
+      <div class="card" style="background-image: url(<%= image_path flat.picture %>);">
+        <h2><%= flat.city %></h2>
+        <h3><%= flat.titre %></h3>
+        <p><%= flat.description %></p>
+        <%= image_tag flat.avatar, class: "card-user" %>
+        <ul>
+          <li><i class="fa fa-star" style="color: #ffb400" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star" style="color: #ffb400" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star" style="color: #ffb400" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star" style="color: #ffb400" aria-hidden="true"></i></li>
+          <li><i class="fa fa-star" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+

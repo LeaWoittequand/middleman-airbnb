@@ -1,0 +1,15 @@
+- city: 'Paris, France'
+  titre: "Sebastien's Home"
+  description: 'Charming room in Montmartre'
+  picture: 'card-paris.jpg'
+  avatar: 'seb.jpg'
+- city: 'Paris, France'
+  titre: "Boris's Home"
+  description: 'Small flat in Brussel'
+  picture: 'card-brussels.jpeg'
+  avatar: 'anne.jpg'
+- city: 'London, UK'
+  titre: "Romain's Home"
+  description: "Nice Flat in Piccadily"
+  picture: 'card-london.jpeg'
+  avatar: 'romain.jpeg'
